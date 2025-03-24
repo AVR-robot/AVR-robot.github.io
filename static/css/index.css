@@ -1,0 +1,263 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+.video-container {
+  height: 240px;             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-container video {
+  height: 100%;               
+  width: auto;                
+}
+
+.fixed-width {
+  max-width: 800px; /* 或你希望的具体宽度 */
+  margin: 0 auto;   /* 居中显示 */
+}
+
+.carousel {
+  position: relative;
+  width: 800px;       /* 轮播组件整体宽度，可自行修改 */
+  margin: 0 auto;     /* 居中显示 */
+  overflow: hidden;   /* 隐藏溢出内容 */
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+/* 轨道容器，固定尺寸，隐藏多余内容 */
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  height: 450px; /* 根据视频/图片的高度需要自行调整 */
+  position: relative;
+}
+
+/* 可移动轨道，水平排布所有slide，并可进行translateX平移 */
+.carousel-track {
+  display: flex;             /* 水平排列子元素 */
+  transition: transform 0.5s ease-in-out; /* 切换时平滑过渡 */
+}
+
+/* 每一页 slide 的基础样式 */
+.slide {
+  min-width: 100%;  /* 每个slide占满容器宽度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* 你也可以在这里设置背景色、边距等 */
+}
+
+/* 如果是视频，可以让其自适应容器 */
+.slide video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 标题或描述文字 */
+.caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* 左右切换按钮样式 */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.carousel-button.left {
+  left: 1rem;
+}
+
+.carousel-button.right {
+  right: 1rem;
+}
+
+/* 底部圆点导航 */
+.carousel-nav {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.carousel-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicator.current-slide {
+  background: #666; /* 当前激活页的圆点颜色 */
+}
